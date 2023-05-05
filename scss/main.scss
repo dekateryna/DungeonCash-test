@@ -90,7 +90,7 @@
 
 	&__image-box {
 		width: 660px;
-		height: 428px;
+		height: 100%;
 		object-fit: contain;
 		object-position: left top;
 		margin-bottom: 20px;
@@ -184,7 +184,7 @@
 }
 
 .prizes-item {
-	width: 368px;
+	width: calc(100% / 3 - 110px / 3);
 	border: 2px solid #c9106c;
 	background: linear-gradient(to right, rgba(8, 2, 13, 0.5), rgba(0, 0, 0, 0.2));
 	border-radius: 16px;
@@ -243,7 +243,6 @@
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 24px;
-	text-align: right;
 	letter-spacing: 0.004em;
 	color: #C5C1C5;
 }
@@ -265,14 +264,9 @@
 	}
 
 	&__box {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+		width: calc(100% / 3 - 110px / 3);
+		text-align: center;
 		margin-bottom: 60px;
-	}
-
-	&__pic {
-
 	}
 
 	&__text {
@@ -298,13 +292,12 @@
 }
 
 .inform-item {
-	width: 368px;
 	height: 208px;
 	border: 2px solid transparent;
 	background: linear-gradient(#0f0518, #0f0518) padding-box,
 	linear-gradient(to right, rgb(177, 18, 162), rgb(243, 12, 12)) border-box;
 	border-radius: 16px;
-	padding-top: 55px;
+	padding: 55px 10px 0;
 	position: relative;
 	text-align: center;
 	margin: 0 auto 16px;
@@ -320,24 +313,28 @@
 
 	}
 
-	&__list-item {
-		text-align: center;
-	}
-
 	&__icon {
 		position: absolute;
 		top: -40px;
 		left: calc(50% - 40px);
 	}
 }
-
+@media screen and (max-width: 991px) {
+	.prizes-item, .information__box {
+		width: calc(50% - 55px / 2);
+	}
+}
 @media screen and (max-width: 767px) {
 	.header {
-		padding: 32px 40px 24px;
+		padding: 32px 20px 24px;
 	}
 	.container {
 		flex-direction: column;
 		align-items: center;
+	}
+	.prizes-item, .information__box {
+		max-width: 370px;
+		width: 100%;
 	}
 	.subtitle {
 		font-size: 30px;
