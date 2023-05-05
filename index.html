@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+	      rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@500;600;700&display=swap" rel="stylesheet">
+	<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+	/>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header class="header">
+	<div class="header__logo-box"></div>
+	<nav class="header__nav">
+		<ul class="header__list">
+			<li class="header__list-item">
+				<a class="header__link" href="#home">Home</a>
+			</li>
+			<li class="header__list-item">
+				<a class="header__link" href="#prizes">Prizes</a>
+			</li>
+			<li class="header__list-item">
+				<a class="header__link" href="#information">Information</a>
+			</li>
+		</ul>
+	</nav>
+	<div class="ellipse3"></div>
+</header>
+<main class="main">
+	<section class="main__home home" id="home">
+		<div class="home__title-box">
+			<h1 class="home__title">check your luck!
+				<div class="ellipse1"></div>
+			</h1>
+		</div>
+
+		<div class="home__image-box">
+			<img class="home__image" src="assets/src/images/IMG_1930-removebg-preview%201.png" alt="home picture">
+		</div>
+		<form action="https://www.coinpayments.net/index.php" method="post">
+			<input type="hidden" name="cmd" value="_pay">
+			<input type="hidden" name="reset" value="1">
+			<input type="hidden" name="merchant" value="16465a3c890944d2aa21694536ce5c7d">
+			<input type="hidden" name="item_name" value="TOVAR">
+			<input type="hidden" name="currency" value="USD">
+			<input type="hidden" name="amountf" value="10.00000000">
+			<input type="hidden" name="quantity" value="1">
+			<input type="hidden" name="allow_quantity" value="0">
+			<input type="hidden" name="want_shipping" value="1">
+			<input type="hidden" name="allow_extra" value="0">
+			<button type="submit" class="home__button button">Buy ticket 15$</button>
+		</form>
+
+
+	</section>
+	<div class="wrapper">
+		<section class="main__prizes prizes" id="prizes">
+			<h2 class="prizes__subtitle subtitle">hello moles!</h2>
+			<div class="prizes__text-box">
+				<div class="prizes__text">with mint coming up we’re announcing a big raffle <br>
+					The Dungeon team is excited to announce a big lottery!
+				</div>
+				<div class="prizes__text">Due to the fact that we are approaching the opening of our mining platform and
+					the release of the NFT collection,
+					we decided to raffle valuable prizes for you. Number of tickets is limited - <p
+							class="prizes__text prizes__text_big prizes__anim animate__animated animate__heartBeat animate__fast">
+						999</p> pieces
+				</div>
+			</div>
+			<div class="prizes__container container">
+				<div class="prizes__item prizes-item">
+					<div class="prizes-item__image-box">
+						<img class="prizes-item__image" src="assets/src/images/prize1.png" alt="prize1">
+					</div>
+					<div class="prizes-item__main">
+						<p class="prizes-item__title">
+							<span class="prizes-item__name name">Doodles</span>
+							<img src="assets/src/icons/icon-star.svg" alt="icon-star">
+						</p>
+						<div class="prizes-item__inform">
+							<div class="prizes-item__description">
+								<p class="prizes-item__head item-head">Items</p>
+								<p class="prizes-item__value name">4</p>
+							</div>
+							<div class="prizes-item__description">
+								<p class="prizes-item__head item-head">Floor price</p>
+								<p class="prizes-item__value name">2.8 ETH</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="prizes__item prizes-item">
+					<div class="prizes-item__image-box">
+						<img class="prizes-item__image" src="assets/src/images/prize2.png" alt="prize2">
+					</div>
+					<div class="prizes-item__main">
+						<p class="prizes-item__title">
+							<span class="prizes-item__name name"> <span class="name name_uppercase">BEANZ</span> Official</span>
+							<img src="assets/src/icons/icon-star.svg" alt="icon-star">
+						</p>
+						<div class="prizes-item__inform">
+							<div class="prizes-item__description">
+								<p class="prizes-item__head item-head">Items</p>
+								<p class="prizes-item__value name">3</p>
+							</div>
+							<div class="prizes-item__description">
+								<p class="prizes-item__head item-head">Floor price</p>
+								<p class="prizes-item__value name">1.4 ETH</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="prizes__item prizes-item">
+					<div class="prizes-item__image-box">
+						<img class="prizes-item__image" src="assets/src/images/prize3.png" alt="prize3">
+					</div>
+					<div class="prizes-item__main">
+						<p class="prizes-item__title">
+							<span class="prizes-item__name name">Invisible Friends</span>
+							<img src="assets/src/icons/icon-star.svg" alt="icon-star">
+						</p>
+						<div class="prizes-item__inform">
+							<div class="prizes-item__description">
+								<p class="prizes-item__head item-head">Items</p>
+								<p class="prizes-item__value name">3</p>
+							</div>
+							<div class="prizes-item__description">
+								<p class="prizes-item__head item-head">Floor price</p>
+								<p class="prizes-item__value name">1.2 ETH</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="spider">
+				<img src="assets/src/images/spider.png" alt="spider">
+			</div>
+		</section>
+		<section class="main__information information" id="information">
+			<h2 class="information__subtitle"><span class="subtitle">What you need</span> to do to take part</h2>
+			<div class="information__container container">
+				<div class="information__box">
+					<div class="information__item inform-item">
+						<p class="inform-item__name name">TWITTER</p>
+						<ul class="inform-item__list">
+							<li class="inform-item__list-item item-head">Subscribe to our twitter.</li>
+							<li class="inform-item__list-item item-head">Be active on our project's twitter</li>
+						</ul>
+						<img class="inform-item__icon" src="assets/src/icons/icon-inform.svg" alt="icon-inform">
+					</div>
+					<button class="information__button button button_small">
+						<a class="information__button-text" href="https://twitter.com/">
+							Go to twitter
+						</a>
+					</button>
+				</div>
+				<div class="information__box">
+					<div class="information__item inform-item">
+						<p class="inform-item__name name">DISCORD</p>
+						<ul class="inform-item__list">
+							<li class="inform-item__list-item item-head">Subscribe to our project's discord.</li>
+							<li class="inform-item__list-item item-head">Be active in the discord of our project.</li>
+						</ul>
+						<img class="inform-item__icon" src="assets/src/icons/icon-inform.svg" alt="icon-inform">
+					</div>
+					<button class="information__button button button_small">
+						<a class="information__button-text" href="https://discord.com/">
+							Go to discord
+						</a>
+					</button>
+				</div>
+				<div class="information__box">
+					<div class="information__item inform-item">
+						<p class="inform-item__name name">TICKET</p>
+						<ul class="inform-item__list">
+							<li class="inform-item__list-item item-head">Buy a ticket to take part in this super
+								raffle
+							</li>
+						</ul>
+						<img class="inform-item__icon" src="assets/src/icons/icon-inform.svg" alt="icon-inform">
+					</div>
+					<form action="https://www.coinpayments.net/index.php" method="post">
+						<input type="hidden" name="cmd" value="_pay">
+						<input type="hidden" name="reset" value="1">
+						<input type="hidden" name="merchant" value="16465a3c890944d2aa21694536ce5c7d">
+						<input type="hidden" name="item_name" value="TOVAR">
+						<input type="hidden" name="currency" value="USD">
+						<input type="hidden" name="amountf" value="10.00000000">
+						<input type="hidden" name="quantity" value="1">
+						<input type="hidden" name="allow_quantity" value="0">
+						<input type="hidden" name="want_shipping" value="1">
+						<input type="hidden" name="allow_extra" value="0">
+						<button class="information__button button button_small button_text">Buy ticket 15$</button>
+					</form>
+				</div>
+			</div>
+			<h2 class="information__text">
+				<span>Results after mint!</span>
+				<img class="information__pic" src="assets/src/images/photo_2023-03-20_16-21-18-transformed%201.png"
+				     alt="">
+			</h2>
+		</section>
+	</div>
+</main>
+<div class="ellipse2"></div>
+<div class="ellipse4"></div>
+<div class="ellipse5"></div>
+<div class="ellipse6"></div>
+<div class="ellipse7"></div>
+<div class="ellipse8"></div>
+<div class="ellipse9"></div>
+<div class="ellipse10"></div>
+<div class="ellipse11"></div>
+<div class="ellipse12"></div>
+
+
+</body>
+</html>
