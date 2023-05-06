@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 }
 
-.wrapper {
+.content-container {
 	padding-right: 20px;
 	padding-left: 20px;
 	max-width: 1260px;
@@ -42,6 +42,8 @@
 	&__link {
 		text-decoration: none;
 		color: #FFFDFF;
+		position: relative;
+		z-index: 100;
 	}
 
 }
@@ -64,6 +66,7 @@
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+	overflow-x: hidden;
 
 	&__title-box {
 		width: 100%;
@@ -143,6 +146,7 @@
 .prizes {
 	padding-top: 152px;
 	position: relative;
+	overflow-x: hidden;
 
 	&__title {
 	}
@@ -347,9 +351,10 @@
 	}
 }
 
-body {
+.wrapper {
 	position: relative;
 	overflow-x: hidden;
+	width: 100%;
 }
 
 .ellipse1 {
@@ -505,6 +510,7 @@ body {
 	animation-duration: 15s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
+	z-index: 5;
 }
 
 @keyframes spiderMove {
